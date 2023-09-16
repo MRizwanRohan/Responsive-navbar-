@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url('img.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+.contain{
+    height: 100%;
+    width: 20%;
+    position: absolute;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    border: 2px solid #a84127a6;
+    transition: .6s ease;
+    transform: translateX(0);
+}
+
+.contain .head{
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    padding: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    background: linear-gradient(30deg,#d3c0c7,#ed4901);
+}
+
+ol{
+    width: 100%;
+    list-style: none;
+}
+
+ol li{
+    display: block;
+    width: 100%;
+}
+
+
+ol li a{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 15px 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 17px;
+    letter-spacing: 1px;
+    position: relative;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+ol li :hover{
+    background-color: transparent;
+    color: #e8edf1;
+    letter-spacing: 3px;
+}
+
+@media (max-width: 767px) {
+    .contain {
+        width: 100%;
+        height: 40%;
+    }
+}
+
+    @media (max-width: 1024px) {
+        .contain {
+            width: 35%; 
+
+        }
+    }
+
+
+
+
+
